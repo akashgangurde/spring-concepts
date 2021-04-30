@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	<context:annotation-config />
+	<bean id="stud1" class="com.app.Student">
+	<property name="roll" value="10"/>
+	<property name="name" value="Shrihari"/>
+	<property name="city" value="Thane"/>
+	</bean>
+	<bean id="stud2" class="com.app.Student">
+	<property name="roll" value="11"/>
+	<property name="name" value="Ramesh"/>
+	<property name="city" value="Satara"/>
+	</bean>
+	 <bean class="com.app.College" id="clg">
+	<property name="id" value="1001"/>
+	<property name="name" value="Thana College"/>
+	
+	</bean>
+	
+	<bean class="com.app.College1" id="clg1">
+	<constructor-arg name="id" value="1002"/>
+	<constructor-arg name="name" value="Mumbai College"/>
+	</bean>
+	</beans>
